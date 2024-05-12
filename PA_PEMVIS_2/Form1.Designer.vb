@@ -57,7 +57,7 @@ Partial Class Form1
         Me.txtRegistrasi.Name = "txtRegistrasi"
         Me.txtRegistrasi.Size = New System.Drawing.Size(75, 23)
         Me.txtRegistrasi.TabIndex = 3
-        Me.txtRegistrasi.Text = "S"
+        Me.txtRegistrasi.Text = "Registrasi"
         Me.txtRegistrasi.UseVisualStyleBackColor = True
         '
         'Form1
