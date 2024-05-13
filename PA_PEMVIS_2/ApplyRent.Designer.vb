@@ -35,6 +35,7 @@ Partial Class ApplyRent
         Me.chExtraBatt = New System.Windows.Forms.CheckBox()
         Me.lbTotalTarif = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.btnKembali = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,29 +60,29 @@ Partial Class ApplyRent
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(586, 280)
+        Me.Label3.Location = New System.Drawing.Point(571, 280)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 16)
+        Me.Label3.Size = New System.Drawing.Size(74, 16)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Label3"
+        Me.Label3.Text = "Crosser VX"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(341, 280)
+        Me.Label2.Location = New System.Drawing.Point(333, 280)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 16)
+        Me.Label2.Size = New System.Drawing.Size(71, 16)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "Varilux Pro"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(95, 280)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 16)
+        Me.Label1.Size = New System.Drawing.Size(73, 16)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Ventura R5"
         '
         'PictureBox3
         '
@@ -144,14 +145,15 @@ Partial Class ApplyRent
         'lbTotalTarif
         '
         Me.lbTotalTarif.AutoSize = True
-        Me.lbTotalTarif.Location = New System.Drawing.Point(125, 117)
+        Me.lbTotalTarif.Location = New System.Drawing.Point(158, 117)
         Me.lbTotalTarif.Name = "lbTotalTarif"
-        Me.lbTotalTarif.Size = New System.Drawing.Size(28, 16)
+        Me.lbTotalTarif.Size = New System.Drawing.Size(14, 16)
         Me.lbTotalTarif.TabIndex = 5
-        Me.lbTotalTarif.Text = "tarif"
+        Me.lbTotalTarif.Text = "0"
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.btnKembali)
         Me.Panel2.Controls.Add(Me.txtTipeSepeda)
         Me.Panel2.Controls.Add(Me.lbTotalTarif)
@@ -162,6 +164,15 @@ Partial Class ApplyRent
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(414, 229)
         Me.Panel2.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(126, 117)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(31, 16)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Rp. "
         '
         'btnKembali
         '
@@ -206,4 +217,5 @@ Partial Class ApplyRent
     Friend WithEvents lbTotalTarif As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnKembali As Button
+    Friend WithEvents Label4 As Label
 End Class
