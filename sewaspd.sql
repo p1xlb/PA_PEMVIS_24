@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2024 at 06:53 AM
+-- Generation Time: May 13, 2024 at 12:44 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -50,8 +50,7 @@ INSERT INTO `pelanggan` (`username`, `password`, `nama_pelanggan`, `nomor_telepo
 
 CREATE TABLE `sepeda_listrik` (
   `kode_sepeda` varchar(10) NOT NULL,
-  `merek` varchar(50) NOT NULL,
-  `model` varchar(100) NOT NULL,
+  `tipe_sepeda` varchar(155) NOT NULL,
   `kapasitas_baterai` int(11) NOT NULL,
   `jarak_tempuh` int(11) NOT NULL,
   `tarif` int(255) NOT NULL,
@@ -64,9 +63,10 @@ CREATE TABLE `sepeda_listrik` (
 -- Dumping data for table `sepeda_listrik`
 --
 
-INSERT INTO `sepeda_listrik` (`kode_sepeda`, `merek`, `model`, `kapasitas_baterai`, `jarak_tempuh`, `tarif`, `status`, `perawatan_terakhir`, `id_stasiun`) VALUES
-('001', 'Honda', 'EM1', 12, 60, 75000, 'tersedia', '2024-05-10', 'BPN101 - J'),
-('002', 'Yamaha', 'LESTRIK1', 11, 55, 50000, 'tersedia', '2024-05-13', 'SMD101 - S');
+INSERT INTO `sepeda_listrik` (`kode_sepeda`, `tipe_sepeda`, `kapasitas_baterai`, `jarak_tempuh`, `tarif`, `status`, `perawatan_terakhir`, `id_stasiun`) VALUES
+('CVX001', 'Crosser VX', 12, 60, 80000, 'tersedia', '2024-05-13', 'SMD101 - S'),
+('VP003', 'Varilux Pro', 960, 65, 65000, 'tersedia', '2024-05-13', 'SMD101 - S'),
+('VR5002', 'Ventura R5', 12, 50, 50000, 'tersedia', '2024-05-10', 'BPN101 - J');
 
 -- --------------------------------------------------------
 
