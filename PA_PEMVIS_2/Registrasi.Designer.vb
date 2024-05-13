@@ -34,41 +34,41 @@ Partial Class Registrasi
         '
         Me.txtUsername.Location = New System.Drawing.Point(183, 90)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(100, 22)
+        Me.txtUsername.Size = New System.Drawing.Size(255, 22)
         Me.txtUsername.TabIndex = 1
         '
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(183, 118)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(100, 22)
+        Me.txtPassword.Size = New System.Drawing.Size(255, 22)
         Me.txtPassword.TabIndex = 2
         '
         'txtNama
         '
         Me.txtNama.Location = New System.Drawing.Point(183, 146)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(100, 22)
+        Me.txtNama.Size = New System.Drawing.Size(255, 22)
         Me.txtNama.TabIndex = 3
         '
         'txtNTelpon
         '
         Me.txtNTelpon.Location = New System.Drawing.Point(183, 174)
         Me.txtNTelpon.Name = "txtNTelpon"
-        Me.txtNTelpon.Size = New System.Drawing.Size(100, 22)
+        Me.txtNTelpon.Size = New System.Drawing.Size(255, 22)
         Me.txtNTelpon.TabIndex = 4
         '
         'rtxtAlamat
         '
         Me.rtxtAlamat.Location = New System.Drawing.Point(183, 202)
         Me.rtxtAlamat.Name = "rtxtAlamat"
-        Me.rtxtAlamat.Size = New System.Drawing.Size(100, 96)
+        Me.rtxtAlamat.Size = New System.Drawing.Size(255, 96)
         Me.rtxtAlamat.TabIndex = 6
         Me.rtxtAlamat.Text = ""
         '
         'txtRegistrasi
         '
-        Me.txtRegistrasi.Location = New System.Drawing.Point(208, 304)
+        Me.txtRegistrasi.Location = New System.Drawing.Point(363, 304)
         Me.txtRegistrasi.Name = "txtRegistrasi"
         Me.txtRegistrasi.Size = New System.Drawing.Size(75, 23)
         Me.txtRegistrasi.TabIndex = 7

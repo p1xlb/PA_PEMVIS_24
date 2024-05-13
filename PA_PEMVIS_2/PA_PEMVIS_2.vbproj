@@ -95,10 +95,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InvetoryManager.Designer.vb">
-      <DependentUpon>InvetoryManager.vb</DependentUpon>
+    <Compile Include="InventoryManager.Designer.vb">
+      <DependentUpon>InventoryManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="InvetoryManager.vb">
+    <Compile Include="InventoryManager.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -140,8 +140,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InvetoryManager.resx">
-      <DependentUpon>InvetoryManager.vb</DependentUpon>
+    <EmbeddedResource Include="InventoryManager.resx">
+      <DependentUpon>InventoryManager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

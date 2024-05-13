@@ -8,20 +8,33 @@ Public Class Form1
         RD = CMD.ExecuteReader
         RD.Read()
         If RD.HasRows Then
+            RD.Close()
             MsgBox("Login Berhasil")
             Me.Hide()
             UserDash.Show()
         ElseIf username = "Admin" And password = "Admin" Then
+            RD.Close()
             MsgBox("Login Berhasil")
             Me.Hide()
             AdminDash.Show()
         Else
+            RD.Close()
             MsgBox("Login Gagal")
         End If
 
     End Sub
 
+    Public Sub Clear()
+        txtUsername.Clear()
+        txtPassword.Clear()
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
+    End Sub
+
+    Private Sub txtRegistrasi_Click(sender As Object, e As EventArgs) Handles txtRegistrasi.Click
+        Me.Hide()
+        Registrasi.Show()
     End Sub
 End Class

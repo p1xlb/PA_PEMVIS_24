@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2024 at 05:32 AM
+-- Generation Time: May 13, 2024 at 06:53 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -35,19 +35,38 @@ CREATE TABLE `pelanggan` (
   `alamat` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `pelanggan`
+--
+
+INSERT INTO `pelanggan` (`username`, `password`, `nama_pelanggan`, `nomor_telepon`, `alamat`) VALUES
+('UjangM', '1234', 'Ujang Mahendra', '0812345678', 'Jalan. Rumah Saya No.1 Blok Z');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sepeda`
+-- Table structure for table `sepeda_listrik`
 --
 
-CREATE TABLE `sepeda` (
-  `id_sepeda` varchar(5) NOT NULL,
-  `tipe_sepeda` varchar(155) NOT NULL,
-  `status` varchar(20) NOT NULL,
+CREATE TABLE `sepeda_listrik` (
+  `kode_sepeda` varchar(10) NOT NULL,
+  `merek` varchar(50) NOT NULL,
+  `model` varchar(100) NOT NULL,
+  `kapasitas_baterai` int(11) NOT NULL,
+  `jarak_tempuh` int(11) NOT NULL,
   `tarif` int(255) NOT NULL,
-  `kilometer` int(20) NOT NULL
+  `status` enum('tersedia','disewa','diperbaiki','') NOT NULL,
+  `perawatan_terakhir` date NOT NULL,
+  `id_stasiun` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `sepeda_listrik`
+--
+
+INSERT INTO `sepeda_listrik` (`kode_sepeda`, `merek`, `model`, `kapasitas_baterai`, `jarak_tempuh`, `tarif`, `status`, `perawatan_terakhir`, `id_stasiun`) VALUES
+('001', 'Honda', 'EM1', 12, 60, 75000, 'tersedia', '2024-05-10', 'BPN101 - J'),
+('002', 'Yamaha', 'LESTRIK1', 11, 55, 50000, 'tersedia', '2024-05-13', 'SMD101 - S');
 
 -- --------------------------------------------------------
 
@@ -64,6 +83,16 @@ CREATE TABLE `transaksi` (
   `paket` varchar(255) NOT NULL,
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `sepeda_listrik`
+--
+ALTER TABLE `sepeda_listrik`
+  ADD PRIMARY KEY (`kode_sepeda`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

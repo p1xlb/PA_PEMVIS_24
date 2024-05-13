@@ -24,12 +24,13 @@ Partial Class AdminDash
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InventarisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PenyewaanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListSepedaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManajemenInventarisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PenyewaanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListPersetujuanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListPenyewaanBerjalanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListRiwayatPenyewaanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,10 +46,22 @@ Partial Class AdminDash
         '
         'InventarisToolStripMenuItem
         '
-        Me.InventarisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListSepedaToolStripMenuItem})
+        Me.InventarisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListSepedaToolStripMenuItem, Me.ManajemenInventarisToolStripMenuItem})
         Me.InventarisToolStripMenuItem.Name = "InventarisToolStripMenuItem"
         Me.InventarisToolStripMenuItem.Size = New System.Drawing.Size(86, 24)
         Me.InventarisToolStripMenuItem.Text = "Inventaris"
+        '
+        'ListSepedaToolStripMenuItem
+        '
+        Me.ListSepedaToolStripMenuItem.Name = "ListSepedaToolStripMenuItem"
+        Me.ListSepedaToolStripMenuItem.Size = New System.Drawing.Size(237, 26)
+        Me.ListSepedaToolStripMenuItem.Text = "List Sepeda"
+        '
+        'ManajemenInventarisToolStripMenuItem
+        '
+        Me.ManajemenInventarisToolStripMenuItem.Name = "ManajemenInventarisToolStripMenuItem"
+        Me.ManajemenInventarisToolStripMenuItem.Size = New System.Drawing.Size(237, 26)
+        Me.ManajemenInventarisToolStripMenuItem.Text = "Manajemen Inventaris"
         '
         'PenyewaanToolStripMenuItem
         '
@@ -56,18 +69,6 @@ Partial Class AdminDash
         Me.PenyewaanToolStripMenuItem.Name = "PenyewaanToolStripMenuItem"
         Me.PenyewaanToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
         Me.PenyewaanToolStripMenuItem.Text = "Penyewaan"
-        '
-        'KeluarToolStripMenuItem
-        '
-        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
-        Me.KeluarToolStripMenuItem.Text = "Keluar"
-        '
-        'ListSepedaToolStripMenuItem
-        '
-        Me.ListSepedaToolStripMenuItem.Name = "ListSepedaToolStripMenuItem"
-        Me.ListSepedaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.ListSepedaToolStripMenuItem.Text = "List Sepeda"
         '
         'ListPersetujuanToolStripMenuItem
         '
@@ -86,6 +87,12 @@ Partial Class AdminDash
         Me.ListRiwayatPenyewaanToolStripMenuItem.Name = "ListRiwayatPenyewaanToolStripMenuItem"
         Me.ListRiwayatPenyewaanToolStripMenuItem.Size = New System.Drawing.Size(249, 26)
         Me.ListRiwayatPenyewaanToolStripMenuItem.Text = "List Riwayat Penyewaan"
+        '
+        'KeluarToolStripMenuItem
+        '
+        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
+        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
+        Me.KeluarToolStripMenuItem.Text = "Keluar"
         '
         'AdminDash
         '
@@ -111,4 +118,5 @@ Partial Class AdminDash
     Friend WithEvents ListPenyewaanBerjalanToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListRiwayatPenyewaanToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents KeluarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManajemenInventarisToolStripMenuItem As ToolStripMenuItem
 End Class

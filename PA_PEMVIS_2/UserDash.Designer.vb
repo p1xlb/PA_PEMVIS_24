@@ -51,13 +51,13 @@ Partial Class UserDash
         'AjukanSewaToolStripMenuItem
         '
         Me.AjukanSewaToolStripMenuItem.Name = "AjukanSewaToolStripMenuItem"
-        Me.AjukanSewaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AjukanSewaToolStripMenuItem.Size = New System.Drawing.Size(183, 26)
         Me.AjukanSewaToolStripMenuItem.Text = "Ajukan Sewa"
         '
         'RiwayatSewaToolStripMenuItem
         '
         Me.RiwayatSewaToolStripMenuItem.Name = "RiwayatSewaToolStripMenuItem"
-        Me.RiwayatSewaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.RiwayatSewaToolStripMenuItem.Size = New System.Drawing.Size(183, 26)
         Me.RiwayatSewaToolStripMenuItem.Text = "Riwayat Sewa"
         '
         'KeluarToolStripMenuItem
