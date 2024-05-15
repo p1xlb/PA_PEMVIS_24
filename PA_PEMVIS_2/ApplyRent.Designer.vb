@@ -37,6 +37,7 @@ Partial Class ApplyRent
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnKembali = New System.Windows.Forms.Button()
+        Me.btnAjukan = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -153,6 +154,7 @@ Partial Class ApplyRent
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.btnAjukan)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.btnKembali)
         Me.Panel2.Controls.Add(Me.txtTipeSepeda)
@@ -182,6 +184,15 @@ Partial Class ApplyRent
         Me.btnKembali.TabIndex = 6
         Me.btnKembali.Text = "Button1"
         Me.btnKembali.UseVisualStyleBackColor = True
+        '
+        'btnAjukan
+        '
+        Me.btnAjukan.Location = New System.Drawing.Point(325, 114)
+        Me.btnAjukan.Name = "btnAjukan"
+        Me.btnAjukan.Size = New System.Drawing.Size(75, 23)
+        Me.btnAjukan.TabIndex = 8
+        Me.btnAjukan.Text = "Ajukan"
+        Me.btnAjukan.UseVisualStyleBackColor = True
         '
         'ApplyRent
         '
@@ -218,4 +229,5 @@ Partial Class ApplyRent
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnKembali As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents btnAjukan As Button
 End Class
