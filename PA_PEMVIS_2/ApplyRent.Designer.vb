@@ -22,6 +22,7 @@ Partial Class ApplyRent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ApplyRent))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,9 +36,9 @@ Partial Class ApplyRent
         Me.chExtraBatt = New System.Windows.Forms.CheckBox()
         Me.lbTotalTarif = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnAjukan = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnKembali = New System.Windows.Forms.Button()
-        Me.btnAjukan = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,25 +88,28 @@ Partial Class ApplyRent
         '
         'PictureBox3
         '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(499, 25)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(216, 229)
+        Me.PictureBox3.Size = New System.Drawing.Size(216, 216)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
         'PictureBox2
         '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(258, 25)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(216, 229)
+        Me.PictureBox2.Size = New System.Drawing.Size(216, 216)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(14, 25)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(216, 229)
+        Me.PictureBox1.Size = New System.Drawing.Size(216, 216)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -167,6 +171,15 @@ Partial Class ApplyRent
         Me.Panel2.Size = New System.Drawing.Size(414, 229)
         Me.Panel2.TabIndex = 6
         '
+        'btnAjukan
+        '
+        Me.btnAjukan.Location = New System.Drawing.Point(325, 114)
+        Me.btnAjukan.Name = "btnAjukan"
+        Me.btnAjukan.Size = New System.Drawing.Size(75, 23)
+        Me.btnAjukan.TabIndex = 8
+        Me.btnAjukan.Text = "Ajukan"
+        Me.btnAjukan.UseVisualStyleBackColor = True
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -184,15 +197,6 @@ Partial Class ApplyRent
         Me.btnKembali.TabIndex = 6
         Me.btnKembali.Text = "Button1"
         Me.btnKembali.UseVisualStyleBackColor = True
-        '
-        'btnAjukan
-        '
-        Me.btnAjukan.Location = New System.Drawing.Point(325, 114)
-        Me.btnAjukan.Name = "btnAjukan"
-        Me.btnAjukan.Size = New System.Drawing.Size(75, 23)
-        Me.btnAjukan.TabIndex = 8
-        Me.btnAjukan.Text = "Ajukan"
-        Me.btnAjukan.UseVisualStyleBackColor = True
         '
         'ApplyRent
         '

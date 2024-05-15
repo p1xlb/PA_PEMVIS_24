@@ -36,6 +36,7 @@ Public Class UserDash
         RD = CMD.ExecuteReader
         RD.Read()
         If RD.HasRows Then
+            AjukanSewaToolStripMenuItem.Enabled = False
             tipe_sepeda.Text = RD.Item("tipe_sepeda")
             paket.Text = RD.Item("paket")
             lama_sewa.Text = RD.Item("lama_sewa")
@@ -49,8 +50,22 @@ Public Class UserDash
             ElseIf status.Text = "Ongoing" Then
                 statusBox.BackColor = Color.Blue
             End If
+
+            If tipe_sepeda.Text = "Ventura R5" Then
+                VR5.Show()
+                VX.Hide()
+                CVX.Hide()
+            ElseIf tipe_sepeda.Text = "Varilux Pro" Then
+                VR5.Hide()
+                VX.Show()
+                CVX.Hide()
+            ElseIf tipe_sepeda.Text = "Crosser VX" Then
+                VR5.Hide()
+                VX.Hide()
+                CVX.Show()
+            End If
         Else
-                RD.Close()
+            RD.Close()
             Label2.Text = "Sewa Sepeda Listrik Sekarang!"
             Panel1.Hide()
         End If

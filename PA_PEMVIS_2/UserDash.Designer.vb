@@ -22,6 +22,7 @@ Partial Class UserDash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserDash))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InventarisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AjukanSewaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,9 +36,9 @@ Partial Class UserDash
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnRefresh = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CVX = New System.Windows.Forms.PictureBox()
+        Me.VX = New System.Windows.Forms.PictureBox()
+        Me.VR5 = New System.Windows.Forms.PictureBox()
         Me.statusBox = New System.Windows.Forms.Panel()
         Me.status = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -46,9 +47,9 @@ Partial Class UserDash
         Me.tipe_sepeda = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CVX, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VX, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VR5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -57,7 +58,7 @@ Partial Class UserDash
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InventarisToolStripMenuItem, Me.KeluarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(713, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -136,9 +137,9 @@ Partial Class UserDash
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.CVX)
+        Me.Panel1.Controls.Add(Me.VX)
+        Me.Panel1.Controls.Add(Me.VR5)
         Me.Panel1.Controls.Add(Me.statusBox)
         Me.Panel1.Controls.Add(Me.status)
         Me.Panel1.Controls.Add(Me.Label10)
@@ -150,7 +151,7 @@ Partial Class UserDash
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Location = New System.Drawing.Point(36, 172)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(732, 252)
+        Me.Panel1.Size = New System.Drawing.Size(634, 252)
         Me.Panel1.TabIndex = 7
         '
         'Label6
@@ -163,36 +164,42 @@ Partial Class UserDash
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(693, 127)
+        Me.btnRefresh.Location = New System.Drawing.Point(595, 127)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
         Me.btnRefresh.TabIndex = 16
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
-        'PictureBox3
+        'CVX
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(331, 24)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(175, 174)
-        Me.PictureBox3.TabIndex = 15
-        Me.PictureBox3.TabStop = False
+        Me.CVX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.CVX.Image = CType(resources.GetObject("CVX.Image"), System.Drawing.Image)
+        Me.CVX.Location = New System.Drawing.Point(271, 24)
+        Me.CVX.Name = "CVX"
+        Me.CVX.Size = New System.Drawing.Size(175, 175)
+        Me.CVX.TabIndex = 15
+        Me.CVX.TabStop = False
         '
-        'PictureBox2
+        'VX
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(288, 24)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(175, 174)
-        Me.PictureBox2.TabIndex = 14
-        Me.PictureBox2.TabStop = False
+        Me.VX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.VX.Image = CType(resources.GetObject("VX.Image"), System.Drawing.Image)
+        Me.VX.Location = New System.Drawing.Point(261, 24)
+        Me.VX.Name = "VX"
+        Me.VX.Size = New System.Drawing.Size(175, 175)
+        Me.VX.TabIndex = 14
+        Me.VX.TabStop = False
         '
-        'PictureBox1
+        'VR5
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(250, 24)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(175, 174)
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
+        Me.VR5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.VR5.Image = CType(resources.GetObject("VR5.Image"), System.Drawing.Image)
+        Me.VR5.Location = New System.Drawing.Point(252, 24)
+        Me.VR5.Name = "VR5"
+        Me.VR5.Size = New System.Drawing.Size(175, 175)
+        Me.VR5.TabIndex = 13
+        Me.VR5.TabStop = False
         '
         'statusBox
         '
@@ -250,7 +257,7 @@ Partial Class UserDash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(713, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.Label2)
@@ -262,9 +269,9 @@ Partial Class UserDash
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CVX, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VX, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VR5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -286,10 +293,10 @@ Partial Class UserDash
     Friend WithEvents paket As Label
     Friend WithEvents lama_sewa As Label
     Friend WithEvents tipe_sepeda As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents VR5 As PictureBox
     Friend WithEvents statusBox As Panel
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents CVX As PictureBox
+    Friend WithEvents VX As PictureBox
     Friend WithEvents btnRefresh As Button
     Friend WithEvents Label6 As Label
 End Class

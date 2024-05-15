@@ -74,9 +74,9 @@ Public Class ApplyRent
     Private Sub Clear()
         txtLamaSewa.Clear()
         txtTipeSepeda.Clear()
-        lbTotalTarif.Text = "0"
         chHelm.Checked = False
         chExtraBatt.Checked = False
+        lbTotalTarif.Text = "0"
     End Sub
 
     Private Sub btnAjukan_Click(sender As Object, e As EventArgs) Handles btnAjukan.Click
